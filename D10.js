@@ -104,11 +104,23 @@ const onlyLetters = (str) => {
   const arrs = str.split(" ");
 
   for (let i = 0; i < arrs.length; i++) {
-    return str.replace([0 - 9], "");
+    return str
+      .replace(1, "")
+      .replace(2, "")
+      .replace(3, "")
+      .replace(4, "")
+      .replace(5, "")
+      .replace(6, "")
+      .replace(7, "")
+      .replace(8, "")
+      .replace(9, "")
+      .replace(10, "")
+      .replace(0, "");
   }
 };
 
-onlyLetters("I have 4 dogs");
+console.log(onlyLetters("I have 4 dogs"));
+
 // console.log(onlyLetters("i have 4 dog"));
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
