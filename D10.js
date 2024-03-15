@@ -104,20 +104,11 @@ const onlyLetters = (str) => {
   const arrs = str.split(" ");
 
   for (let i = 0; i < arrs.length; i++) {
-    let valueArr = parseInt(arrs[i]);
-    console.log(valueArr);
-    // console.log(valueArr.includes(NaN))
-    // if (valueArr.includes(NaN)  ) {
-    //   console.log("sto passando per if"+valueArr)
-    //   return valueArr
-    // }
-    // else {
-
-    //   console.log(arrs[i])
-
-    // }
+    return str.replace([0 - 9], "");
   }
 };
+
+onlyLetters("I have 4 dogs");
 // console.log(onlyLetters("i have 4 dog"));
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
