@@ -551,7 +551,16 @@ allTr();
 
 */
 
-const halfTree = (n) => {};
+
+
+const halfTree = (n) => {for (var i = 0; i < 8; i++) {
+  for (var j = 0; j <= i; j++) {
+     document.write("*"); 
+  }
+  document.write("<br>");
+}};
+
+halfTree(1)
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
