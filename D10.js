@@ -551,16 +551,16 @@ allTr();
 
 */
 
-
-
-const halfTree = (n) => {for (var i = 0; i < 8; i++) {
-  for (var j = 0; j <= i; j++) {
-     document.write("*"); 
+const halfTree = (n) => {
+  for (var i = 0; i < n; i++) {
+    for (var j = 0; j <= i; j++) {
+      document.write("*");
+    }
+    document.write("<br>");
   }
-  document.write("<br>");
-}};
+};
 
-halfTree(1)
+halfTree(6);
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
@@ -573,16 +573,29 @@ halfTree(1)
   *****
 
 */
+const tree = (n) => {
+  for (var i = 0; i < n; i++) {
+    for (var j = 0; j <= i; j++) {
+      document.write("*");
+    }
+    document.write("<br>");
+  }
+};
 
+tree(3);
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 const isItPrime = (n) => {
   const numberofNumber = parseInt(n);
-  if (numberofNumber / numberofNumber === 0 && numberofNumber > 0 == 4&& numberofNumber/1===0) {
-    console.log(true)
-  }else{
-    console.log(false)
+  if (
+    numberofNumber / numberofNumber === 0 &&
+    numberofNumber > 0 == 4 &&
+    numberofNumber / 1 === 0
+  ) {
+    console.log(true);
+  } else {
+    console.log(false);
   }
 };
 
