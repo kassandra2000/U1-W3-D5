@@ -522,7 +522,7 @@ myList();
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 const removeList = () => {
-  list.style.display = "hidden";
+  list.remove();
 };
 
 removeList();
