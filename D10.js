@@ -576,11 +576,16 @@ halfTree(6);
   *****
 
 */
-const tree = (n) => {
-  for (var i = 0; i < n; i++) {
-    for (var j = 0; j <= i; j++) {
+const tree = (num) => {
+  let n = num;
+  for (i = 1; i <= n; i++) {
+    for (j = i; j < n; j++) {
+      document.write(" ");
+    }
+    for (j = 1; j <= 2 * i - 1; j++) {
       document.write("*");
     }
+
     document.write("<br>");
   }
 };
